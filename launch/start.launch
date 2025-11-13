@@ -24,4 +24,9 @@
   />
 
   <include file="$(find-pkg-share ros_commons)/launch/rqt_steering_with_tf_tree.launch"/>
+
+  <include file="$(find-pkg-share nav2_collision_monitor)/launch/collision_monitor_node.launch.py">
+    <arg name="params_file" value="$(find-pkg-share rosbot3_gazebo)/config/collision_monitor.yaml"/>
+  </include>
+  
 </launch>
